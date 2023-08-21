@@ -1,0 +1,18 @@
+CASE 1:
+Primeiro passo é a definição dos dados que temos acessos, para criação da estrutura da base. Após, verificaria o top 3 maiores acionamentos, por exemplo, qual causa raiz do zendesk/service now para atacar e reduzir os acionamentos
+Dados a serem coletados: nome, setor, tipo de equipamento, qual solicitação (reparo, suporte, atualização, problemas de uso), se é recorrente ou primeiro acionamento.
+
+CASE 2:
+A transição deve ser realizada por lotes, sendo definido se será migrado por ordem alfabética, de cargo, tempo de empresa ou qualquer outra definição que possa ser utilizada.
+
+CASE 3:
+A primeira questão a ser considerada quando se fala em gestão de acesso é a segurança. Portanto, para que seja feito com cautela, implementaria uma autenticação 2FA, utilizando um autenticador e um gerenciador de senhas/logins para os usuários, com criação aleatória de códigos únicos de acesso.
+
+CASE 4:
+A IA pode ser responsável por prestar o primeiro suporte, com análise dos dados de chamados e incidentes com maior recorrência e as possíveis solução. Também pode ser integrada para poder realizar alterações de forma automática na máquina do usuário, para corrigir problemas simples de configuração.
+
+CASE 5:
+
+SELECT email; //seleciona o dado a ser consultado//
+FROM users_emails; //seleciona a tabela a ser consultada//
+ORDER BY last 30; //retorna os últimos 30 dados inseridos na tabela no campo e-mail//
