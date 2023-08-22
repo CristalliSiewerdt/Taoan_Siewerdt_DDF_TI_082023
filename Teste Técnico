@@ -1,1 +1,114 @@
+SSeção 1: Conhecimento em Suporte de Sistemas 
+ 
+1. (Múltipla escolha) Qual é a relação entre MTTR e MTBR (Mean Time Between Repairs) em um contexto de DevOps? 
+a) MTTR é sempre maior que MTBR 
+b)	MTTR e MTBR são sempre iguais // CORRETA
+c)	MTBR é a soma de MTTR e o tempo de funcionamento entre falhas 
+d)	Não há relação entre MTTR e MTBR 
+ 
+2. Em uma empresa SaaS (Software como Serviço), como a adesão aos SLAs (Acordos de Nível de Serviço) geralmente influencia o CSAT (índice de Satisfação do Cliente)? a) SLAs e CSAT são não relacionados, e a adesão aos SLAs não afeta a satisfação do cliente 
+b) Cumprir os SLAs pode aumentar o CSAT, pois reflete o compromisso da empresa em 
+fornecer serviços dentro dos parâmetros acordados // CORRETA	 
+c)	Exceder os SLAs leva a uma diminuição no CSAT porque indica excesso de entrega e gasto desnecessários de recursos. 
+d)	SLAs afetam apenas processos internos e não têm impacto direto no cliente, portanto, não influenciam o CSAT. 
+ 
+ 
+Seção 2: Conhecimentos Técnicos 
+ 
+1. (Múltipla escolha) Qual dos seguintes comandos SQL é usado para extrair dados de uma tabela? 
+a) INSERT INTO b) UPDATE c) SELECT d) DELETE 
+ 
+2. Suponha que você tem duas tabelas, Clientes e Pedidos, com as seguintes estruturas: 
+ 
+Tabela Clientes: 
+ 
+ID_Cliente 	Nome  	Email 
+1 	 	João 	 	joao@example.com 
+2 	 	Maria  	maria@example.com  
+3 	 	Ana 	 
+ 	ana@example.com 	 
+Tabela Pedidos: 
+ 
+ID_Pedido 	ID_Cliente 	Produto 	 	Quantidade 
+101 	 	1 	 	Telefone 	 	2 
+102 	 	3 	 	Computador  	1 
+103 	 	3 	 	Tablet  	 	5 
+ 
+ 
+Qual será o resultado da seguinte consulta SQL, que utiliza um JOIN entre as tabelas Clientes e Pedidos? 
+ 
+Unset 
+SELECT Clientes.Nome, Pedidos.Produto, Pedidos.Quantidade 
+FROM Clientes 
+INNER JOIN Pedidos ON Clientes.ID_Cliente = Pedidos. ID_Cliente; 
+ 
+a) 
+Unset 
+Nome | Produto 	| Quantidade 
+---------|------------------ |---------------- 
+João    | Telefone 	| 2 
+Ana     | Computador | 1 
+ 
+b) //CORRETA
+Unset 
+Nome | Produto 	| Quantidade 
+---------|------------------ |---------------- 
+João    | Telefone 	| 2 
+Maria | Computador | 1 
+Ana 	| Tablet 	| 5 
+ 
+c) 
+Unset 
+Nome | Produto 	| Quantidade 
+---------|------------------ |---------------- 
+Maria | Telefone 	| 2 
+Ana 	| Computador | 1 
+Ana 	| Tablet 	| 5 
+ 
+d) 
+Unset 
+Nome | Produto 	| Quantidade 
+---------|------------------ |---------------- 
+João    | Computador | 1 
+Maria | Telefone 	| 2 
+Ana 	| Tablet 	| 5 
+ 
+ 
+Seção 3: Soft Skills 
+ 
+ 
+1. (Múltipla escolha) O que é mais importante para estabelecer uma boa relação com os stakeholders? 
+a) Ignorar suas opiniões e impor sua própria visão 
+b) Escutar ativamente, considerar suas opiniões e colaborar para encontrar soluções 
+mutuamente benéficas	 //CORRETA
+c)	Agradá-los, independentemente do impacto no projeto 
+d)	Contar-lhes apenas o que eles querem ouvir 
+ 
+ 
+Seção 4: Conhecimento sobre a Dadosfera 
+ 
+ 
+1.(Múltipla escolha) Quais dos seguintes tipos de colunas de dados são suportados na Dadosfera? 
+ 
+a)	blob, clob 
+b)	number, decimal numeric, int //CORRETA
+c)	enum, user-defined data type 
+d)	a e c 
+ 
+2.(Múltipla escolha) No contexto de uma Pipeline na Dadosfera, o que significa a sigla EL(T)? 
+a)	Erro, Log, Transformação 
+b)	Extração, Carga, Transformação /CORRETA
+c)	Extração, Transformação, Carga 
+d)	Execução, Listagem, Transmissão 
+ 
+3. (Múltipla escolha) Como é feito o login no Módulo de Consolidação atrelado à Dadosfera? 
+a)	Utilizando o usuário e senha da Dadosfera 
+b)	Através do SSO (Single Sign-On ou Autenticação Única) //CORRETA
+c)	Criando credenciais de acesso do usuário separadamente 
+d)	Utilizando o MFA (Autenticação multifator) //CORRETA
+ 
+4. (Múltipla escolha) O que deve ser feito se um usuário perde acesso ao dispositivo onde o MFA (Autenticação multifator) foi cadastrado na Dadosfera? a) Criar um novo usuário 
+b)	Redefinir a senha da Dadosfera 
+c)	Abrir um ticket no suporte solicitando a desabilitação do MFA /CORRETA
+d)	Realizar o login utilizando o SSO do Google 
 
